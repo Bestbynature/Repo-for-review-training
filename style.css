@@ -1,0 +1,50 @@
+.row {
+  display: flex;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.col1 {
+  flex-basis: 30%;
+  border-right: 2px solid #555;
+  background-color: #ccc;
+  margin-left: 5px;
+  padding-right: 5px;
+  height: 100%;
+  overflow: auto;
+}
+
+.col2 {
+  flex-basis: 70%;
+  margin-left: 5px;
+}
+
+header {
+  font-weight: 400;
+  font-size: 32px;
+  background-color: #999;
+}
+
+p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+ul {
+  font-size: 20px;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+  font-size: 20px;
+}
+
+/*  ------ media query for less than or equal to 600 px */
+
+@media only screen and (max-width: 600px) {
+  .row {
+    display: block;
+  }
+}
